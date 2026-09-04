@@ -1,24 +1,64 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Catalog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Product Catalog</h1>
-    
-    <div class="search-container">
-        <input 
-            type="text" 
-            id="searchInput" 
-            placeholder="Search products..."
-        >
-    </div>
-    
-    <div id="productContainer" class="products"></div>
-    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A curated product catalog with instant search."
+    />
+    <title>Northstar | Product Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Northstar home">
+        <span class="brand-mark">N</span>
+        <span>J.C. Product catalog</span>
+      </a>
+      <span class="header-note">CURATED EVERYDAY OBJECTS</span>
+    </header>
+
+    <main class="catalog-shell">
+      <section class="intro">
+        <div>
+          <p class="eyebrow">THE ESSENTIAL EDIT</p>
+          <h1>Good things,<br /><em>well chosen.</em></h1>
+        </div>
+        <p class="intro-copy">
+          A considered collection of useful objects for work, rest, and
+          everywhere in between.
+        </p>
+      </section>
+
+      <section class="catalog-toolbar" aria-label="Catalog controls">
+        <label class="search-container" for="searchInput">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search the collection..."
+            autocomplete="off"
+          />
+          <span class="search-shortcut">⌘ K</span>
+        </label>
+        <p class="results-count" id="resultsCount">25 products</p>
+      </section>
+
+      <div id="productContainer" class="products" aria-live="polite"></div>
+    </main>
+
+    <footer class="site-footer">
+      <span>Northstar collection / 2026</span>
+      <span>Made for the everyday</span>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
