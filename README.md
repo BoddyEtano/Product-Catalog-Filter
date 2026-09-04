@@ -1,13 +1,23 @@
-# Product Catalog Exercise
+# Product Catalog
 
-Ejercicio 3 - Sprint 9: Renderizar lista de productos desde un array.
+## Descripcion en espanol
 
-## Objetivo
+Catalogo interactivo de productos creado con tecnologias web fundamentales. Muestra 25 productos con imagen, nombre, precio y categoria, e incluye una barra de busqueda instantanea que funciona sin distinguir entre mayusculas y minusculas.
 
-Mostrar 3 productos en cards/boxes con nombre, precio y categoría.
+### Herramientas utilizadas
 
-## Tecnologías usadas
+- **HTML5:** estructura semantica de la pagina y barra de busqueda.
+- **CSS3:** diseno responsivo, grid, tarjetas, tipografia, colores y animaciones.
+- **JavaScript:** array de objetos, `forEach()`, `filter()`, `toLowerCase()`, template literals y manipulacion del DOM.
+- **Unsplash:** imagenes de productos cargadas mediante URLs externas.
 
-- HTML5 (estructura)
-- CSS3 (grid layout, cards)
-- JavaScript (forEach, template literals, DOM manipulation)
+## English description
+
+An interactive product catalog built with core web technologies. It displays 25 products with an image, name, price, and category, plus an instant search bar that works case-insensitively.
+
+### Tools used
+
+- **HTML5:** semantic page structure and search bar.
+- **CSS3:** responsive design, grid layout, product cards, typography, colors, and animations.
+- **JavaScript:** object arrays, `forEach()`, `filter()`, `toLowerCase()`, template literals, and DOM manipulation.
+- **Unsplash:** product images loaded through external URLs.
